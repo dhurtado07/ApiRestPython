@@ -8,10 +8,10 @@ CORS(app)
 
 # Configuración de la conexión a la base de datos
 conn = psycopg2.connect(
-    host="localhost",
-    database="api_users",
-    user="postgres",
-    password=".nysde"
+    host="dpg-chk6eo67avj217c84rl0-a",
+    database="api_users_5hc8",
+    user="nysde",
+    password="5u58zQxCYe8TtL1EOQ3V0Uj3gdPWNsde"
 )
 print("conexion con la DB exitosa")
 
