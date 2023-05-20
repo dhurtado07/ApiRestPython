@@ -47,6 +47,6 @@ conn = psycopg2.connect(
 python app.py
 ```
 Esto despliega la dirección http://127.0.0.1:5000. Acceda a ella usando su navegador.
-Recuerda reemplazar los valores de "servidor", "nombre_base_de_datos", "usuario" y "contraseña" en el paso 5 con la información correcta de su entorno.
+Recuerda reemplazar los valores de "servidor", "nombre_base_de_datos", "usuario" y "contraseña" en el paso 5 con la información correcta de su entorno
 
 
