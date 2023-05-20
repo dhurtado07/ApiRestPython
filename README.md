@@ -2,6 +2,9 @@
 Este el proyecto final para el diplomado en FullStack para la materia Nociones de programacion
 @Autor Denys Hurtado Mamani
 
+## El proyecto tambien esta deployado en Render.com
+https://apirest-denys.onrender.com/
+
 ## Prerrequisitos:
 * Python debe estar instalado.
 * PostgreSQL debe estar instalado.
@@ -48,5 +51,4 @@ python app.py
 ```
 Esto despliega la dirección http://127.0.0.1:5000. Acceda a ella usando su navegador.
 Recuerda reemplazar los valores de "servidor", "nombre_base_de_datos", "usuario" y "contraseña" en el paso 5 con la información correcta de su entorno
-
 
