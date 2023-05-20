@@ -19,8 +19,9 @@ pip install flask-cors
 pip install psycopg2
 ```
 ## 3. Crear la base de datos en PostgreSQL:
+```
 CREATE DATABASE api_users;
-
+```
 ## 4. Crear la tabla 'usuarios' en la base de datos:
 ```
 CREATE TABLE usuarios (
