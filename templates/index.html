@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentación de API</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Documentación de API</h1>
+
+      <h2>Endpoint para crear un usuario</h2>
+      <pre>
+            <code>
+Endpoint: POST /usuarios
+
+Ejemplo de solicitud:
+POST /usuarios HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+
+{
+    "cedula_identidad": "123456789",
+    "nombre": "Juan",
+    "primer_apellido": "Pérez",
+    "segundo_apellido": "Gómez",
+    "fecha_nacimiento": "1990-01-01"
+}
+
+Respuesta exitosa:
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "message": "Usuario creado",
+    "id_usuario": 1
+}
+            </code>
+        </pre>
+
+      <h2>Endpoint para listar todos los usuarios</h2>
+      <pre>
+            <code>
+Endpoint: GET /usuarios
+
+Ejemplo de solicitud:
+GET /usuarios HTTP/1.1
+Host: api.example.com
+
+Respuesta exitosa:
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+    {
+        "id_usuario": 1,
+        "cedula_identidad": "123456789",
+        "nombre": "Juan",
+        "primer_apellido": "Pérez",
+        "segundo_apellido": "Gómez",
+        "fecha_nacimiento": "1990-01-01"
+    },
+    ...
+]
+            </code>
+        </pre>
+
+      <!-- Resto de los endpoints -->
+      <!-- Resto de los endpoints -->
+
+      <h2>Endpoint para obtener un usuario en específico</h2>
+      <pre>
+    <code>
+Endpoint: GET /usuarios/{id_usuario}
+
+Ejemplo de solicitud:
+GET /usuarios/1 HTTP/1.1
+Host: api.example.com
+
+Respuesta exitosa:
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id_usuario": 1,
+    "cedula_identidad": "123456789",
+    "nombre": "Juan",
+    "primer_apellido": "Pérez",
+    "segundo_apellido": "Gómez",
+    "fecha_nacimiento": "1990-01-01"
+}
+    </code>
+</pre>
+
+      <h2>Endpoint para actualizar los datos de un usuario</h2>
+      <pre>
+    <code>
+Endpoint: PUT /usuarios/{id_usuario}
+
+Ejemplo de solicitud:
+PUT /usuarios/1 HTTP/1.1
+Host: api.example.com
+Content-Type: application/json
+
+{
+    "cedula_identidad": "987654321",
+    "nombre": "Pedro",
+    "primer_apellido": "González",
+    "segundo_apellido": "López",
+    "fecha_nacimiento": "1985-05-10"
+}
+
+Respuesta exitosa:
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "message": "Usuario actualizado"
+}
+    </code>
+</pre>
+
+      <h2>Endpoint para eliminar a un usuario</h2>
+      <pre>
+    <code>
+Endpoint: DELETE /usuarios/{id_usuario}
+
+Ejemplo de solicitud:
+DELETE /usuarios/1 HTTP/1.1
+Host: api.example.com
+
+Respuesta exitosa:
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "message": "Usuario eliminado"
+}
+    </code>
+</pre>
+
+      <h2>Endpoint para mostrar el promedio de edades de los usuarios</h2>
+      <pre>
+    <code>
+Endpoint: GET /usuarios/promedio-edad
+
+Ejemplo de solicitud:
+GET /usuarios/promedio-edad HTTP/1.1
+Host: api.example.com
+
+Respuesta exitosa:
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "promedioEdad": 30.5
+}
+    </code>
+</pre>
+
+      <h2>Endpoint para mostrar la versión del API REST</h2>
+      <pre>
+    <code>
+Endpoint: GET /estado
+
+Ejemplo de solicitud:
+GET /estado HTTP/1.1
+Host: api.example.com
+
+Respuesta exitosa:
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "nameSystem": "api-users",
+    "version": "0.0.1",
+    "developer": "Juan Carlos Condori Machicado",
+    "email": "juanc.com@gmail.com"
+}
+    </code>
+</pre>
+    </div>
+  </body>
+</html>
