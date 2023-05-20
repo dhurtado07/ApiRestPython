@@ -15,7 +15,7 @@
       <h2>Endpoint para crear un usuario</h2>
       <pre>
             <code>
-Endpoint: POST /usuarios
+Endpoint: POST {url_servidor}/usuarios
 
 Ejemplo de solicitud:
 POST /usuarios HTTP/1.1
@@ -44,7 +44,7 @@ Content-Type: application/json
       <h2>Endpoint para listar todos los usuarios</h2>
       <pre>
             <code>
-Endpoint: GET /usuarios
+Endpoint: GET {url_servidor}/usuarios
 
 Ejemplo de solicitud:
 GET /usuarios HTTP/1.1
@@ -74,7 +74,7 @@ Content-Type: application/json
       <h2>Endpoint para obtener un usuario en específico</h2>
       <pre>
     <code>
-Endpoint: GET /usuarios/{id_usuario}
+Endpoint: GET {url_servidor}/usuarios/{id_usuario}
 
 Ejemplo de solicitud:
 GET /usuarios/1 HTTP/1.1
@@ -98,7 +98,7 @@ Content-Type: application/json
       <h2>Endpoint para actualizar los datos de un usuario</h2>
       <pre>
     <code>
-Endpoint: PUT /usuarios/{id_usuario}
+Endpoint: PUT {url_servidor}/usuarios/{id_usuario}
 
 Ejemplo de solicitud:
 PUT /usuarios/1 HTTP/1.1
@@ -126,7 +126,7 @@ Content-Type: application/json
       <h2>Endpoint para eliminar a un usuario</h2>
       <pre>
     <code>
-Endpoint: DELETE /usuarios/{id_usuario}
+Endpoint: DELETE {url_servidor}/usuarios/{id_usuario}
 
 Ejemplo de solicitud:
 DELETE /usuarios/1 HTTP/1.1
@@ -145,7 +145,7 @@ Content-Type: application/json
       <h2>Endpoint para mostrar el promedio de edades de los usuarios</h2>
       <pre>
     <code>
-Endpoint: GET /usuarios/promedio-edad
+Endpoint: GET {url_servidor}/usuarios/promedio-edad
 
 Ejemplo de solicitud:
 GET /usuarios/promedio-edad HTTP/1.1
@@ -164,7 +164,7 @@ Content-Type: application/json
       <h2>Endpoint para mostrar la versión del API REST</h2>
       <pre>
     <code>
-Endpoint: GET /estado
+Endpoint: GET {url_servidor}/estado
 
 Ejemplo de solicitud:
 GET /estado HTTP/1.1
