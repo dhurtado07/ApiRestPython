@@ -114,7 +114,7 @@ def promedio_edad_usuarios():
 def estado():
     return jsonify({
         'nameSystem': 'api-users',
-        'version': '0.0.1',
+        'version': '1.0',
         'developer': 'Yery Denys Hurtado Mamani',
         'email': 'informatica.live@gmail.com'
     }), 200
