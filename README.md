@@ -1,6 +1,4 @@
 # ApiRestPython
-Este el proyecto final para el diplomado en FullStack para la materia Nociones de programacion
-@Autor Denys Hurtado Mamani
 
 ## El proyecto tambien esta deployado en Render.com
 https://apirest-denys.onrender.com/
