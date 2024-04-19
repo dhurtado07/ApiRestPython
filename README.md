@@ -3,7 +3,7 @@
 ## El proyecto tambien esta deployado en Render.com
 https://apirest-denys.onrender.com/
 
-## Prerrequisitos:
+## Pre requisitos:
 * Python debe estar instalado.
 * PostgreSQL debe estar instalado.
 
